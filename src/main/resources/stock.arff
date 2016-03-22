@@ -1,0 +1,216 @@
+@relation stock
+
+@attribute day77 {U, -, F}
+@attribute day76 {U, -, F}
+@attribute day75 {U, -, F}
+@attribute day74 {U, -, F}
+@attribute day73 {U, -, F}
+@attribute day72 {U, -, F}
+@attribute day71 {U, -, F}
+@attribute day70 {U, -, F}
+@attribute day69 {U, -, F}
+@attribute day68 {U, -, F}
+@attribute day67 {U, -, F}
+@attribute day66 {U, -, F}
+@attribute day65 {U, -, F}
+@attribute day64 {U, -, F}
+@attribute day63 {U, -, F}
+@attribute day62 {U, -, F}
+@attribute day61 {U, -, F}
+@attribute day60 {U, -, F}
+@attribute day59 {U, -, F}
+@attribute day58 {U, -, F}
+@attribute day57 {U, -, F}
+@attribute day56 {U, -, F}
+@attribute day55 {U, -, F}
+@attribute day54 {U, -, F}
+@attribute day53 {U, -, F}
+@attribute day52 {U, -, F}
+@attribute day51 {U, -, F}
+@attribute day50 {U, -, F}
+@attribute day49 {U, -, F}
+@attribute day48 {U, -, F}
+@attribute day47 {U, -, F}
+@attribute day46 {U, -, F}
+@attribute day45 {U, -, F}
+@attribute day44 {U, -, F}
+@attribute day43 {U, -, F}
+@attribute day42 {U, -, F}
+@attribute day41 {U, -, F}
+@attribute day40 {U, -, F}
+@attribute day39 {U, -, F}
+@attribute day38 {U, -, F}
+@attribute day37 {U, -, F}
+@attribute day36 {U, -, F}
+@attribute day35 {U, -, F}
+@attribute day34 {U, -, F}
+@attribute day33 {U, -, F}
+@attribute day32 {U, -, F}
+@attribute day31 {U, -, F}
+@attribute day30 {U, -, F}
+@attribute day29 {U, -, F}
+@attribute day28 {U, -, F}
+@attribute day27 {U, -, F}
+@attribute day26 {U, -, F}
+@attribute day25 {U, -, F}
+@attribute day24 {U, -, F}
+@attribute day23 {U, -, F}
+@attribute day22 {U, -, F}
+@attribute day21 {U, -, F}
+@attribute day20 {U, -, F}
+@attribute day19 {U, -, F}
+@attribute day18 {U, -, F}
+@attribute day17 {U, -, F}
+@attribute day16 {U, -, F}
+@attribute day15 {U, -, F}
+@attribute day14 {U, -, F}
+@attribute day13 {U, -, F}
+@attribute day12 {U, -, F}
+@attribute day11 {U, -, F}
+@attribute day10 {U, -, F}
+@attribute day9 {U, -, F}
+@attribute day8 {U, -, F}
+@attribute day7 {U, -, F}
+@attribute day6 {U, -, F}
+@attribute day5 {U, -, F}
+@attribute day4 {U, -, F}
+@attribute day3 {U, -, F}
+@attribute day2 {U, -, F}
+@attribute day1 {U, -, F}
+@attribute today {U, -, F}
+@attribute tomorrow {U, -, F}
+
+@data
+U,F,F,F,F,U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U
+F,F,F,F,U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U
+F,F,F,U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U
+F,F,U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F
+F,U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U
+U,U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U
+U,U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F
+U,U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F
+U,U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U
+U,U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F
+U,F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U
+F,F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F
+F,F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U
+F,U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U
+U,U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U
+U,F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F
+F,U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U
+U,U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F
+U,U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F
+U,F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F
+F,F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U
+F,F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U
+F,U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U
+U,F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U
+F,F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F
+F,U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F
+U,F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U
+F,F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U
+F,U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F
+U,U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U
+U,F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F
+F,F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F
+F,F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U
+F,U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U
+U,F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U
+F,F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F
+F,F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F
+F,U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F
+U,U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F
+U,F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F
+F,U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U
+U,U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U
+U,U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U
+U,F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U
+F,F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F
+F,U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F
+U,U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F
+U,U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F
+U,F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U
+F,F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U
+F,U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F
+U,F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U
+F,F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F
+F,F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F
+F,U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F
+U,F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U
+F,F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F
+F,F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F
+F,U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U
+U,F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U
+F,F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U
+F,U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U
+U,U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F
+U,F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F
+F,F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F
+F,U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U
+U,F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F
+F,F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F
+F,F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U
+F,U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F
+U,F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F
+F,F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U
+F,F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U
+F,F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U
+F,F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F
+F,U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U
+U,U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F
+U,U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U
+U,U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F
+U,U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U
+U,F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U
+F,U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F
+U,U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F
+U,F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U
+F,F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U
+F,U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F
+U,F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U
+F,U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F
+U,F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U
+F,U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F
+U,U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U
+U,U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F
+U,F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F
+F,U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U
+U,F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F
+F,F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F
+F,F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U
+F,U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U
+U,U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F
+U,U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F
+U,U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F
+U,F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U
+F,F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F
+F,U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U
+U,U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F
+U,F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U
+F,U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F
+U,F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F
+F,F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U
+F,U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U
+U,U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F
+U,U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F
+U,F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U
+F,F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F
+F,F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U
+F,F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F
+F,F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U
+F,U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F
+U,U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U
+U,U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U
+U,U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U
+U,F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U
+F,F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F
+F,F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U
+F,F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F
+F,U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F
+U,U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U
+U,F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U
+F,U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U,U
+U,F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U,U,U
+F,F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U,U,U,U
+F,F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U,U,U,U,U
+F,U,F,F,U,U,U,U,F,F,F,U,F,F,U,F,F,U,U,U,F,U,F,U,F,U,U,F,F,U,U,F,U,F,U,F,U,F,F,U,F,F,U,U,F,F,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,F,F,U,U,U,U,U,U,U
