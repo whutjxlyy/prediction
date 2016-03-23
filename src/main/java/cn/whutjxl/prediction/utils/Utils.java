@@ -6,12 +6,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
-
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.core.Instances;
@@ -111,26 +109,5 @@ public class Utils {
 			e.printStackTrace();
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		/*
-		 * System.out.println(createModel("src/main/resources/weather.arff",
-		 * "weka.classifiers.trees.J48", new String[][] { { "-C", "0.25" }, {
-		 * "-M", "2" } }));
-		 */
-		Map<Integer, String> map = new HashMap<Integer, String>();
-		for (int i = 4; i < 80; i++) {
-			getArffByExcel("src/main/resources/stock.xlsx", "src/main/resources/stock.arff", i, 0);
-			String s = createModel("src/main/resources/stock.arff", "weka.classifiers.trees.J48",
-					new String[][] { { "-C", "0.25" }, { "-M", "2" } });
-			map.put(i, s);
-		}
-		for (Integer i : map.keySet()) {
-			System.out.println(i);
-			System.out.println("---------------");
-			System.out.println(map.get(i));
-			System.out.println("========================\n\n");
-		}
 	}
 }
