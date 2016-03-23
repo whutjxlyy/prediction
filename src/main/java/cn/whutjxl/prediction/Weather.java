@@ -33,6 +33,8 @@ public class Weather {
 			System.out.println(eval.toSummaryString());
 			System.out.println(eval.toClassDetailsString());
 			System.out.println(eval.toMatrixString());
+			System.out.println("==========");
+			System.out.println(eval.pctCorrect());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
