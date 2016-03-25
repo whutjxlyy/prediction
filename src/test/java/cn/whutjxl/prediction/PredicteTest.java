@@ -103,11 +103,12 @@ public class PredicteTest {
 
 		/**
 		 * src/main/resources/stock.xlsx
-		 * D:/Ksoftware/stock.xlsx‪
+		 * D:/Ksoftware/stock.xlsx
+		 * ‪C:/Users/whutjxl/Desktop/stock.xlsx‪
 		 */
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		for (int i = 4; i < 100; i++) {
-			Utils.getArffByExcel("D:/Ksoftware/stock.xlsx", "src/main/resources/stock.arff", i, 0);
+		for (int i = 4; i < 80; i++) {
+			Utils.getArffByExcel("C:/Users/whutjxl/Desktop/stock.xlsx", "src/main/resources/stock.arff", i, 0);
 			String s = Utils.createModel("src/main/resources/stock.arff", classiferName, null);
 			map.put(i, s);
 		}

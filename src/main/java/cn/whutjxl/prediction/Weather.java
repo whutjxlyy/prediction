@@ -2,7 +2,6 @@ package cn.whutjxl.prediction;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-
 import java.util.Random;
 import org.junit.Test;
 import weka.classifiers.Evaluation;

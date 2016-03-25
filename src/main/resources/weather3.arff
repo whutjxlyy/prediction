@@ -8,4 +8,4 @@
 
 @data
 overcast,hot,normal,FALSE,yes
-rainy,mild,high,TRUE,yes
+rainy,mild,high,TRUE,no
