@@ -8,9 +8,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -24,9 +26,11 @@ import cn.whutjxl.prediction.utils.PredictionUtils;
 
 public class PredictionFrame extends JFrame {
 
-	private static final int DEFAULT_WITH=600;
-	private static final int DEFAULT_HEIGHT=500;
+	private static final int DEFAULT_WITH=1000;
+	private static final int DEFAULT_HEIGHT=600;
 	
+	
+	//trainField
 	private JFrame thisJFrame;
 	private JPanel panel1;
 	private JPanel panel2;
@@ -37,9 +41,20 @@ public class PredictionFrame extends JFrame {
 	private JTextField trainFileField;
 	private JButton trainFileSelectButton;
 	private JButton trainButton;
-	private JComboBox<String> classifierBox;
-	
+	private JComboBox<String> classifierBox;	
 	private Map<String, String> classifierMap;
+	
+	//predictionField
+	private JPanel predictionPanel;
+	private JTextField predictionFileField;
+	private JButton predictionSelectFileButton;
+	private JComboBox<String> modelBox;
+	private JButton predictionButton;
+	private JPanel resultShowPanel;
+	private JScrollPane showScrollPane;
+	private JLabel resultLabel;
+	private JPanel totalPanel;
+	
 	
 	public PredictionFrame(String title) {
 		//  classifier
@@ -57,7 +72,7 @@ public class PredictionFrame extends JFrame {
 		thisJFrame=this;
 		setTitle(title);
 		setSize(DEFAULT_WITH, DEFAULT_HEIGHT);
-//		setResizable(false);
+		setResizable(false);
 		
 		panel1=new JPanel();
 		panel2=new JPanel();
@@ -121,19 +136,21 @@ public class PredictionFrame extends JFrame {
 					}else{
 						int index=0;
 						double max=0;
-						resultTextArea.setText("模型正在训练中，请稍候...\n\n\n\n");
+						resultTextArea.setText("");
+						resultTextArea.paintImmediately(resultTextArea.getBounds());
+						resultTextArea.setText("模型正在训练中,请稍候...\n\n\n\n");
 						resultTextArea.paintImmediately(resultTextArea.getBounds());
 						File destinationFile=new File("src/main/resources/arffs/stock.arff");
 						for(int i=4;i<40;i++){
-							PredictionUtils.getArffByExcel(sourceFile, destinationFile, i, 0);
+							PredictionUtils.getArffByExcel(sourceFile, destinationFile, i, 0, false);
 							double result=(Double) PredictionUtils.createModel(destinationFile, classifierName, null, false, "");
 							if(result>max){
 								index=i;
 								max=result;
 							}
 						}
-						PredictionUtils.getArffByExcel(sourceFile, destinationFile, index, 0);
-						String resultText=(String) PredictionUtils.createModel(destinationFile, classifierName, null, true, sourceFile.getName().split("\\.")[0]);
+						PredictionUtils.getArffByExcel(sourceFile, destinationFile, index, 0, false);
+						String resultText=(String) PredictionUtils.createModel(destinationFile, classifierName, null, true, sourceFile.getName().split("\\.")[0]+"_"+index);
 						resultTextArea.append(resultText);
 						resultTextArea.paintImmediately(resultTextArea.getBounds());
 						resultTextArea.append("\n模型训练完成\n\n\n\n\n");
@@ -152,9 +169,109 @@ public class PredictionFrame extends JFrame {
 		resultScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		panel1.add(resultScrollPane, BorderLayout.CENTER);
 		
+		//predictionPanel
+		predictionPanel=new JPanel();
+		predictionPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 10));
+		predictionPanel.add(new JLabel("请选择待预测股票数据:"));
+		predictionFileField=new JTextField(20);
+		predictionPanel.add(predictionFileField);
+		predictionSelectFileButton=new JButton("...");
+		predictionSelectFileButton.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				FileDialog fileDialog=new FileDialog(thisJFrame, "请选择历史数据", FileDialog.LOAD);
+				fileDialog.setMultipleMode(false);
+				fileDialog.setVisible(true);
+				String fileName=fileDialog.getFile();
+				if(fileName!=null&&!"".equals(fileName)){
+					predictionFileField.setText(fileDialog.getDirectory()+fileName);
+				}
+			}
+		});
+		predictionPanel.add(predictionSelectFileButton);
+		predictionPanel.add(new JLabel("请选择模型:"));
+		modelBox=new JComboBox<String>();
+		File folder=new File("src/main/resources/models/");
+		File[] fileArr=folder.listFiles();
+		for(int i=0;i<fileArr.length;i++)
+			modelBox.addItem(fileArr[i].getName().split("\\.")[0]);
+		predictionPanel.add(modelBox);
+		predictionButton=new JButton("开始预测");
+		predictionButton.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				String sourceFileName=predictionFileField.getText().replace('\\', '/');
+				String modelName=(String) modelBox.getSelectedItem();
+				if(sourceFileName==null||"".equals(sourceFileName)){
+					JOptionPane.showMessageDialog(thisJFrame, "未选择股票历史数据文件!", "警告", JOptionPane.WARNING_MESSAGE);
+				}else if(!(sourceFileName.endsWith(".xls")||sourceFileName.endsWith(".xlsx"))){
+					JOptionPane.showMessageDialog(thisJFrame, "请选择Excel格式的文件!", "警告", JOptionPane.WARNING_MESSAGE);
+				}else if(modelName==null||"".equals(modelName)){
+					JOptionPane.showMessageDialog(thisJFrame, "当前没有任何模型,请先创建模型！", "警告", JOptionPane.WARNING_MESSAGE);
+				}else{
+					File sourceFile=new File(sourceFileName);
+					if(!sourceFile.exists()){
+						JOptionPane.showMessageDialog(thisJFrame, "文件路径有误!", "警告", JOptionPane.WARNING_MESSAGE);
+					}else{
+						resultLabel.setText("正在预测中,请稍候...");
+						File destinationFile=new File("src/main/resources/arffs/prediction.arff");
+						int step=Integer.parseInt(modelName.split("_")[1]);
+						PredictionUtils.getArffByExcel(sourceFile, destinationFile, step, 0, true);
+						String[] result=PredictionUtils.getPredictionResult(destinationFile, modelName);
+						int num=result.length;
+						resultShowPanel.removeAll();
+						for(int i=0;i<num-2;i++){
+							addJLabel(resultShowPanel, result[i], 0);
+						}
+						addJLabel(resultShowPanel, result[num-2], 1);
+						resultLabel.setText("预测完成!        预测精度为:"+result[num-1]);
+						resultLabel.paintImmediately(resultLabel.getBounds());
+					}
+				}
+			}
+		});
+		predictionPanel.add(predictionButton);
+		panel2.add(predictionPanel, BorderLayout.NORTH);
+		
+		// showPrediction
+		totalPanel=new JPanel();
+		totalPanel.setLayout(null);
+		resultLabel=new JLabel();
+		resultLabel.setBounds(220, 110, 560, 20);
+		totalPanel.add(resultLabel);
+		resultShowPanel=new JPanel();
+		resultShowPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+		showScrollPane=new JScrollPane(resultShowPanel);
+		showScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		showScrollPane.setBounds(200, 140, 600, 128);
+		totalPanel.add(showScrollPane);
+		panel2.add(totalPanel, BorderLayout.CENTER);
+		
 		tabbedPane=new JTabbedPane();
 		tabbedPane.add("training", panel1);
 		tabbedPane.add("predicting", panel2);
 		add(tabbedPane);
+	}
+	
+	public static void addJLabel(JPanel jpanel,String s,int state){
+		Icon icon=null;
+		if(state==0){
+			if(s.equals("U")){
+				icon=new ImageIcon("src/main/resources/pictures/ug.jpg");
+			}else if(s.equals("F")){
+				icon=new ImageIcon("src/main/resources/pictures/fg.jpg");
+			}else if(s.equals("-")){
+				icon=new ImageIcon("src/main/resources/pictures/sg.jpg");
+			}
+		}else if(state==1){
+			if(s.equals("U")){
+				icon=new ImageIcon("src/main/resources/pictures/uy.jpg");
+			}else if(s.equals("F")){
+				icon=new ImageIcon("src/main/resources/pictures/fy.jpg");
+			}else if(s.equals("-")){
+				icon=new ImageIcon("src/main/resources/pictures/sy.jpg");
+			}
+		}
+		jpanel.add(new JLabel(icon));
 	}
 }
