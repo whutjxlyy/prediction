@@ -155,6 +155,11 @@ public class PredictionFrame extends JFrame {
 						resultTextArea.paintImmediately(resultTextArea.getBounds());
 						resultTextArea.append("\n模型训练完成\n\n\n\n\n");
 						resultTextArea.paintImmediately(resultTextArea.getBounds());
+						modelBox.removeAll();
+						File folder=new File("src/main/resources/models/");
+						File[] fileArr=folder.listFiles();
+						for(int i=0;i<fileArr.length;i++)
+							modelBox.addItem(fileArr[i].getName().split("\\.")[0]);
 					}
 				}
 			}

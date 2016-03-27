@@ -21,9 +21,9 @@ public class HandleXlsx {
 		if(it.hasNext())
 			it.next();
 		if(it.hasNext())
-			prev=it.next().getCell(4).getNumericCellValue();
+			prev=it.next().getCell(1).getNumericCellValue();
 		while(it.hasNext()){
-			now=it.next().getCell(4).getNumericCellValue();
+			now=it.next().getCell(1).getNumericCellValue();
 			diff=now-prev;
 			prev=now;
 			if(diff>0)

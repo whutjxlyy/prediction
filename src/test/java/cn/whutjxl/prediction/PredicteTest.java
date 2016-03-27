@@ -96,7 +96,7 @@ public class PredicteTest {
 //		 classiferName = "weka.classifiers.bayes.AODEsr"; //62.92
 //		 classiferName = "weka.classifiers.bayes.BayesNet"; //58.04
 //		 classiferName = "weka.classifiers.bayes.HNB"; //60
-//		 classiferName = "weka.classifiers.bayes.NaiveBayes"; //58.04
+		 classiferName = "weka.classifiers.bayes.NaiveBayes"; //58.04
 //		 classiferName = "weka.classifiers.bayes.NaiveBayesSimple"; //58.04
 //		 classiferName = "weka.classifiers.bayes.NaiveBayesUpdateable"; //58.04
 //		 classiferName = "weka.classifiers.bayes.WAODE"; // 62.92
