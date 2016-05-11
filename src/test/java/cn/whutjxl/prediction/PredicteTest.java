@@ -96,7 +96,7 @@ public class PredicteTest {
 //		 classiferName = "weka.classifiers.bayes.AODEsr"; //62.92
 //		 classiferName = "weka.classifiers.bayes.BayesNet"; //58.04
 //		 classiferName = "weka.classifiers.bayes.HNB"; //60
-		 classiferName = "weka.classifiers.bayes.NaiveBayes"; //58.04
+//		 classiferName = "weka.classifiers.bayes.NaiveBayes"; //58.04
 //		 classiferName = "weka.classifiers.bayes.NaiveBayesSimple"; //58.04
 //		 classiferName = "weka.classifiers.bayes.NaiveBayesUpdateable"; //58.04
 //		 classiferName = "weka.classifiers.bayes.WAODE"; // 62.92
@@ -107,7 +107,7 @@ public class PredicteTest {
 		 * ‪C:/Users/whutjxl/Desktop/stock.xlsx‪
 		 */
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		for (int i = 4; i < 80; i++) {
+		for (int i = 4; i < 20; i++) {
 			Utils.getArffByExcel("C:/Users/whutjxl/Desktop/stock.xlsx", "src/main/resources/stock.arff", i, 0);
 			String s = Utils.createModel("src/main/resources/stock.arff", classiferName, null);
 			map.put(i, s);
