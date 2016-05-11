@@ -1,22 +1,5 @@
 @relation prediction
 
-@attribute day26 {U, -, F}
-@attribute day25 {U, -, F}
-@attribute day24 {U, -, F}
-@attribute day23 {U, -, F}
-@attribute day22 {U, -, F}
-@attribute day21 {U, -, F}
-@attribute day20 {U, -, F}
-@attribute day19 {U, -, F}
-@attribute day18 {U, -, F}
-@attribute day17 {U, -, F}
-@attribute day16 {U, -, F}
-@attribute day15 {U, -, F}
-@attribute day14 {U, -, F}
-@attribute day13 {U, -, F}
-@attribute day12 {U, -, F}
-@attribute day11 {U, -, F}
-@attribute day10 {U, -, F}
 @attribute day9 {U, -, F}
 @attribute day8 {U, -, F}
 @attribute day7 {U, -, F}
@@ -26,33 +9,7 @@
 @attribute day3 {U, -, F}
 @attribute day2 {U, -, F}
 @attribute day1 {U, -, F}
-@attribute today {U, -, F}
-@attribute tomorrow {U, -, F}
+@attribute day0 {U, -, F}
 
 @data
-U,U,F,U,F,-,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F
-U,F,U,F,-,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F
-F,U,F,-,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U
-U,F,-,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F
-F,-,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U
--,F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F
-F,U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U
-U,F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F
-F,U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U
-U,U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U
-U,F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U
-F,F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U
-F,U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F
-U,F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U
-F,F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U
-F,U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F
-U,F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U
-F,U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F
-U,F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U
-F,U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U
-U,F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F
-F,U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F,U
-U,F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F,U,U
-F,F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F,U,U,F
-F,U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F,U,U,F,F
-U,U,F,F,U,F,U,F,U,F,U,U,U,U,F,U,U,F,U,F,U,U,F,U,U,F,F,?
+?,?,?,F,U,U,U,U,F,?

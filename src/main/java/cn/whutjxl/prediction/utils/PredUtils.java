@@ -69,7 +69,7 @@ public class PredUtils {
 		return features;
 	}
 
-	public static void createArff(List<Character> features, File destinationFile, int step, List<Integer> indexs) {
+	public static void createArff(List<Character> features, File destinationFile, int step) {
 		FileWriter writer = null;
 		StringBuffer sb = null;
 		try {
@@ -77,9 +77,7 @@ public class PredUtils {
 			String fileName = destinationFile.getName().split("\\.")[0];
 			writer.write("@relation " + fileName + "\n\n");
 			for (int i = step - 1; i >= 1; i--) {
-				if (indexs.contains(i)) {
-					writer.write("@attribute day" + i + " {U, -, F}\n");
-				}
+				writer.write("@attribute day" + i + " {U, -, F}\n");
 			}
 			writer.write("@attribute day0 {U, -, F}\n\n");
 			writer.write("@data\n");
@@ -88,9 +86,7 @@ public class PredUtils {
 				for (int j = step - 1; j < num; j++) {
 					sb = new StringBuffer();
 					for (int k = step - 1; k >= 1; k--) {
-						if (indexs.contains(k)) {
-							sb.append(features.get(j - k) + ",");
-						}
+						sb.append(features.get(j - k) + ",");
 					}
 					sb.append(features.get(j) + "\n");
 					writer.write(sb.toString());
@@ -99,14 +95,14 @@ public class PredUtils {
 			} else {
 				sb = new StringBuffer();
 				for (int j = step - 1; j >= num; j--) {
-					if (indexs.contains(j)) {
-						sb.append("?,");
-					}
+					sb.append("?,");
 				}
-				for (int k = num - 1; k >= 1; k--) {
-					if (indexs.contains(k)) {
-						sb.append(features.get(num - 1 - k) + ",");
-					}
+				/*
+				 * for (int k = num - 1; k >= 1; k--) {
+				 * sb.append(features.get(num - 1 - k) + ","); }
+				 */
+				for (int k = 0; k < num - 1; k++) {
+					sb.append(features.get(k) + ",");
 				}
 				sb.append(features.get(num - 1) + "\n");
 				writer.write(sb.toString());
@@ -125,8 +121,7 @@ public class PredUtils {
 		}
 	}
 
-	public static Object trainModel(File sourceFile, String classifierName, String[][] options, boolean saveModel,
-			String originalName) {
+	public static Object trainModel(File sourceFile, String classifierName, boolean saveModel, String originalName) {
 		String result = "";
 		Double pctCorrect = 0.0;
 		try {
@@ -134,11 +129,6 @@ public class PredUtils {
 			Instances train = source.getDataSet();
 			train.setClassIndex(train.numAttributes() - 1);
 			Classifier cls = (Classifier) Class.forName(classifierName).newInstance();
-			if (options != null) {
-				for (String[] strings : options) {
-					cls.setOptions(strings);
-				}
-			}
 			cls.buildClassifier(train);
 			Evaluation eval = new Evaluation(train);
 			eval.crossValidateModel(cls, train, 10, new Random(1));
@@ -149,7 +139,7 @@ public class PredUtils {
 			result += eval.toSummaryString();
 			pctCorrect = Double.parseDouble(String.format("%.2f", eval.pctCorrect()));
 			if (saveModel) {
-				String modelName = originalName + "_" + name + ".model";
+				String modelName = originalName + "_" + name + "_" + (int) Math.floor(pctCorrect) + ".model";
 				String modelPath = "src/main/resources/models/";
 				SerializationHelper.write(modelPath + modelName, cls);
 				return result;
@@ -176,7 +166,7 @@ public class PredUtils {
 			prediction.instance(numInst - 1).setClassValue(result);
 			double pctCorrect = cls.distributionForInstance(source.instance(numInst - 1))[(int) result];
 			results[0] = prediction.instance(numInst - 1).stringValue(source.numAttributes() - 1);
-			results[1] = String.format("%.4f", pctCorrect);
+			results[1] = String.format("%.2f", pctCorrect * 100);
 			return results;
 		} catch (Exception e) {
 			e.printStackTrace();
