@@ -12,4 +12,15 @@
 @attribute day0 {U, -, F}
 
 @data
-?,?,?,F,U,U,U,U,F,?
+F,F,F,U,U,U,U,U,F,F
+F,F,U,U,U,U,U,F,F,F
+F,U,U,U,U,U,F,F,F,F
+U,U,U,U,U,F,F,F,F,U
+U,U,U,U,F,F,F,F,U,U
+U,U,U,F,F,F,F,U,U,F
+U,U,F,F,F,F,U,U,F,U
+U,F,F,F,F,U,U,F,U,U
+F,F,F,F,U,U,F,U,U,U
+F,F,F,U,U,F,U,U,U,U
+F,F,U,U,F,U,U,U,U,F
+F,U,U,F,U,U,U,U,F,?

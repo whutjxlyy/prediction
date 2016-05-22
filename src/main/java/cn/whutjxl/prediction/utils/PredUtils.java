@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -133,7 +134,7 @@ public class PredUtils {
 			Evaluation eval = new Evaluation(train);
 			eval.crossValidateModel(cls, train, 10, new Random(1));
 			String name = cls.getClass().getSimpleName();
-			if ("J48".equals(name) || "LADTree".equals(name) || "NBTree".equals(name)) {
+			if ("J48".equals(name) || "LADTree".equals(name)) {
 				result += cls.toString();
 			}
 			result += eval.toSummaryString();
@@ -166,7 +167,7 @@ public class PredUtils {
 			prediction.instance(numInst - 1).setClassValue(result);
 			double pctCorrect = cls.distributionForInstance(source.instance(numInst - 1))[(int) result];
 			results[0] = prediction.instance(numInst - 1).stringValue(source.numAttributes() - 1);
-			results[1] = String.format("%.2f", pctCorrect * 100);
+			results[1] = String.format("%.2f", pctCorrect*100);
 			return results;
 		} catch (Exception e) {
 			e.printStackTrace();

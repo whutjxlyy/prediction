@@ -107,7 +107,7 @@ public class PredicteTest {
 		 * ‪C:/Users/whutjxl/Desktop/stock.xlsx‪
 		 */
 		Map<Integer, String> map = new HashMap<Integer, String>();
-		for (int i = 4; i < 20; i++) {
+		for (int i = 7; i <= 10; i++) {
 			Utils.getArffByExcel("C:/Users/whutjxl/Desktop/stock.xlsx", "src/main/resources/stock.arff", i, 0);
 			String s = Utils.createModel("src/main/resources/stock.arff", classiferName, null);
 			map.put(i, s);
